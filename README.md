@@ -5,4 +5,4 @@ An HTML5 based list view plugin and a todos web-app based on this list view. For
 
 web-app example
 ----------
-cctodolist.sinaapp.com. Recommend to view this on your mobile device
+http://cctodolist.sinaapp.com. Recommend to view this on your mobile device

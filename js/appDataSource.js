@@ -12,7 +12,7 @@ var AppDataSource = (function(){
 
 	};
 
-	DataSource.prototype = $.extend(new ccwx.DataSource(options), {
+    DataSource.prototype = $.extend(new ccwx.DataSource(options), {
 
 		onLoaded: function () {
 			

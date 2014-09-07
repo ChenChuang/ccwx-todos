@@ -4,19 +4,19 @@
 
 var AppDataSource = (function(){
 
-	var options = {
-		localStorageKey : 'ccwx-checklist'
-	};
+    var options = {
+        localStorageKey : 'ccwx-checklist'
+    };
 
-	var DataSource = function () {
+    var DataSource = function () {
 
-	};
+    };
 
     DataSource.prototype = $.extend(new ccwx.DataSource(options), {
 
-		onLoaded: function () {
-			
-		},
+        onLoaded: function () {
+            
+        },
 
         onReadDataFailed: function () {
 
@@ -136,9 +136,9 @@ var AppDataSource = (function(){
             this.save();
         }
 
-	});
+    });
 
-	return DataSource;
+    return DataSource;
 
 })();
 

@@ -5,20 +5,20 @@
 
 ccwx.FakeView = (function() {
 
-	var FakeView = function (view) {
-		this.data = view.data;
-	    this.height = view.height;
-	    this.y = view.y;
-	    this.collection = view.collection;
-	};
+    var FakeView = function (view) {
+        this.data = view.data;
+        this.height = view.height;
+        this.y = view.y;
+        this.collection = view.collection;
+    };
 
-	FakeView.prototype = {
-		
-		moveY: function (y) {
+    FakeView.prototype = {
+        
+        moveY: function (y) {
             this.y = y;
         },
 
-		updatePosition: function (y, top) {
+        updatePosition: function (y, top) {
 
             if (y === undefined) {
                 var y = this.collection.calViewPositionByIndex(this.data.index);

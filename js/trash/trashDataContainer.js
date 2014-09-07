@@ -1,9 +1,9 @@
 trashPage.TrashDataContainer = (function(){
 
-	var TrashDataContainer = function () {
-	};
+    var TrashDataContainer = function () {
+    };
 
-	TrashDataContainer.prototype = $.extend(new ccwx.DataContainer(), {
+    TrashDataContainer.prototype = $.extend(new ccwx.DataContainer(), {
 
         onInited: function () {
             
@@ -11,7 +11,7 @@ trashPage.TrashDataContainer = (function(){
 
         },
 
-		restoreItem: function (item) {
+        restoreItem: function (item) {
             
             var t = item.list,
                 lists = app.dataSource.data.lists,
@@ -47,9 +47,9 @@ trashPage.TrashDataContainer = (function(){
             this.deleteItem(item);
         },
 
-	});
+    });
 
-	return TrashDataContainer;
+    return TrashDataContainer;
 
 })();
 

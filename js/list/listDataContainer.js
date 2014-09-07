@@ -1,23 +1,23 @@
 listPage.ListDataContainer = (function(){
 
-	var ListDataContainer = function () {
-	};
+    var ListDataContainer = function () {
+    };
 
-	ListDataContainer.prototype = $.extend(new ccwx.DataContainer(), {
+    ListDataContainer.prototype = $.extend(new ccwx.DataContainer(), {
 
-		onInited: function () {
+        onInited: function () {
             this.updateUndoneNum();
-		},
+        },
 
-		onItemCreated: function (item) {
-			var l = this.items.length;
-			$.extend(item, {
-	            title : '',
+        onItemCreated: function (item) {
+            var l = this.items.length;
+            $.extend(item, {
+                title : '',
                 items : [],
                 undoneNum : 0
-	        });
-	        return item;
-		},
+            });
+            return item;
+        },
 
         validate: function (item) {
 
@@ -43,9 +43,9 @@ listPage.ListDataContainer = (function(){
             }
         }
 
-	});
+    });
 
-	return ListDataContainer;
+    return ListDataContainer;
 
 })();
 

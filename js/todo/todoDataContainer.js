@@ -1,21 +1,21 @@
 todoPage.TodoDataContainer = (function(){
 
-	var TodoDataContainer = function () {
-	};
+    var TodoDataContainer = function () {
+    };
 
-	TodoDataContainer.prototype = $.extend(new ccwx.DataContainer(), {
+    TodoDataContainer.prototype = $.extend(new ccwx.DataContainer(), {
 
-		onInited: function () {
-			this.updateDoneNum();
+        onInited: function () {
+            this.updateDoneNum();
             document.title = app.dataSource.data.lists[todoPage.listIndex].title;
-		},
+        },
 
-		onItemDeleted: function (item) {
+        onItemDeleted: function (item) {
 
-			item.done && this.doneNum--;
-		},
+            item.done && this.doneNum--;
+        },
 
-		checkToggle: function (pos1, pos2) {
+        checkToggle: function (pos1, pos2) {
 
             var item = this.items[pos1];
             if (pos2 < this.doneNum && !item.done) {
@@ -25,22 +25,22 @@ todoPage.TodoDataContainer = (function(){
                 item.done = false;
                 this.doneNum--;
             } else {
-            	return false;
+                return false;
             }
             return true;
-		},
+        },
 
-		onItemCreated: function (item) {
-			var l = this.items.length;
-			$.extend(item, {
-				prio : this.items[l-2] ? this.items[l-2].prio : '1',
-	            content : '',
-	            datetime : ''
-	        });
-	        return item;
-		},
+        onItemCreated: function (item) {
+            var l = this.items.length;
+            $.extend(item, {
+                prio : this.items[l-2] ? this.items[l-2].prio : '1',
+                content : '',
+                datetime : ''
+            });
+            return item;
+        },
 
-		updateDoneNum: function () {
+        updateDoneNum: function () {
 
             var i = this.items.length,
                 s = 0;
@@ -106,9 +106,9 @@ todoPage.TodoDataContainer = (function(){
             return false;
         }
 
-	});
+    });
 
-	return TodoDataContainer;
+    return TodoDataContainer;
 
 })();
 

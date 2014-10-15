@@ -13,5 +13,4 @@ features
 
 web-app example
 ----------
-View this on your mobile device.
 ![image](https://github.com/ChenChuang/ccwx-todos/blob/master/image/qrcode.png)

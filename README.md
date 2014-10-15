@@ -13,4 +13,5 @@ features
 
 web-app example
 ----------
-http://cctodolist.sinaapp.com. Recommend to view this on your mobile device.
+View this on your mobile device.
+![image](https://github.com/ChenChuang/ccwx-todos/blob/master/image/qrcode.png)

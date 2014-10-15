@@ -13,4 +13,4 @@ features
 
 web-app example
 ----------
-![image](https://github.com/ChenChuang/ccwx-todos/blob/master/image/qrcode.png)
+![image](https://github.com/ChenChuang/ccwx-todos/blob/master/image/qrcode128.png)

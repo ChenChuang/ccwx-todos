@@ -30,55 +30,37 @@ var AppDataSource = (function(){
                                 index: 0,
                                 prio: 0,
                                 datetime: '2009-11-13T20:00Z',
-                                content: 'Swipe right to complete Swipe right to complete Swipe right to complete Swipe right to complete'
+                                content: 'Swipe right to complete, Swipe left to delete, Long tap and move to sort, Drag down to create'
                             },
                             {
                                 index: 1,
-                                prio: 1,
-                                datetime: '2009-11-13T20:00Z',
-                                content: 'Swipe left to delete'
+                                prio: 2,
+                                datetime: '2013-05-08T20:08Z',
+                                content: 'Sleep sleep sleep and eat'
                             },
                             {
                                 index: 2,
-                                prio: 0,
-                                datetime: '2009-11-13T20:00Z',
-                                content: 'Swipe left to delete'
+                                prio: 1,
+                                datetime: '2014-10-11T00:20Z',
+                                content: 'Game time !!'
                             },
                             {
                                 index: 3,
-                                prio: 2,
-                                datetime: '2009-11-13T20:00Z',
-                                content: 'Swipe left to delete'
+                                prio: 0,
+                                datetime: '2014-11-23T18:00Z',
+                                content: 'Dinner with Luey'
                             },
                             {
                                 index: 4,
-                                prio: 2,
-                                datetime: '2009-11-13T20:00Z',
-                                content: 'Swipe left to delete'
+                                prio: 1,
+                                datetime: '2015-10-13T10:22Z',
+                                content: 'Read the book'
                             },
                             {
                                 index: 5,
-                                prio: 1,
-                                datetime: '2009-11-13T20:00Z',
-                                content: 'Swipe left to delete'
-                            },
-                            {
-                                index: 6,
                                 prio: 0,
-                                datetime: '2009-11-13T20:00Z',
-                                content: 'Swipe left to delete'
-                            },
-                            {
-                                index: 7,
-                                prio: 1,
-                                datetime: '2009-11-13T20:00Z',
-                                content: 'Swipe left to delete'
-                            },
-                            {
-                                index: 8,
-                                prio: 0,
-                                datetime: '2009-11-13T20:00Z',
-                                content: 'Swipe left to delete'
+                                datetime: '2015-10-13T10:22Z',
+                                content: 'Business Conferrence in Spain'
                             }
                         ]
                     },
@@ -89,20 +71,20 @@ var AppDataSource = (function(){
                             {
                                 index: 0,
                                 prio: 0,
-                                datetime: '2009-11-13T20:00Z',
-                                content: 'Swipe right to complete Swipe right to complete Swipe right to complete Swipe right to complete'
+                                datetime: '2015-10-13T10:22Z',
+                                content: 'Go fishing with uncle Hank'
                             },
                             {
                                 index: 1,
                                 prio: 1,
-                                datetime: '2009-11-13T20:00Z',
-                                content: 'Swipe left to delete'
+                                datetime: '2014-10-13T17:00Z',
+                                content: 'Family time'
                             },
                             {
                                 index: 2,
                                 prio: 0,
-                                datetime: '2009-11-13T20:00Z',
-                                content: 'Swipe left to delete'
+                                datetime: '2099-11-13T20:00Z',
+                                content: 'Too old to do anything'
                             }
                         ]
                     }
@@ -114,21 +96,21 @@ var AppDataSource = (function(){
                             list: 'family',
                             prio: 0,
                             datetime: '2009-11-13T20:00Z',
-                            content: 'Swipe right to complete Swipe right to complete Swipe right to complete Swipe right to complete'
+                            content: 'Trash 2009-11-11 from family'
                         },
                         {
                             index: 1,
                             list: 'work',
                             prio: 1,
                             datetime: '2009-11-13T20:00Z',
-                            content: 'Swipe left to delete'
+                            content: 'Another trash from work'
                         },
                         {
                             index: 2,
-                            list: 'unknown',
+                            list: 'deleted lists',
                             prio: 0,
                             datetime: '2009-11-13T20:00Z',
-                            content: 'Swipe left to delete'
+                            content: 'my list is deleted :('
                         }
                     ]
                 }

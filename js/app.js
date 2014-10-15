@@ -48,11 +48,16 @@ $(function () {
   var hash = app.debug ? '#debug' : '#lists';
   window.location.hash = hash;
 
-  app.dataSource = (new AppDataSource()).load(app.debug);
+  if (app.debug) {
+    app.dataSource = (new AppDataSource()).load(app.debug);
+    listPage.init();
+  } else {
+    app.dataSource = (new SaeDataSource()).load(function(){
+      listPage.init();
+    });
+  }
 
-  listPage.init();
-
-    //todoPage.init(0);
+  //todoPage.init(0);
 
   //trashPage.init();
 

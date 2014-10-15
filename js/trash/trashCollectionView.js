@@ -33,7 +33,7 @@ trashPage.TrashCollectionView = (function () {
                     v;
                 while (i--) {
                     v = this.views[i];
-                    ccwx.db.restoreItem(v.data);
+                    ccwx.db.deleteItem(v.data);
                     ccwx.db.save();
                     v.el.remove();
                 }

@@ -170,7 +170,9 @@ todoPage.TodoItemView = (function () {
         },
 
         onDatetimeChange: function () {
-            this.data.datetime = todoPage.$datetimeInput[0].value;
+            var str = todoPage.$datetimeInput[0].value;
+            this.data.datetime = str.substr(0, 10) + 'T' + str.substr(11, 8);
+            // this.data.datetime = str.substr(0, 16);
             this.renderDatetimeLb();
         },
 

@@ -1,0 +1,7 @@
+build/
+node_modules/
+tmp/
+*.zip
+package.json
+Gruntfile.js
+.DS_Store
